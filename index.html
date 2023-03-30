@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | [Blogr]</title>
   <style>
@@ -12,85 +15,192 @@
   </style>
 </head>
 <body>
-  Product
+  <div class="container">
+    <header>
+      <div class="navigation">
+        <div>
+          <img src="images/logo.svg" alt="logo" class="logo">
+          <button class="close hide">close</button>
+          <button class="burger">open</button>
+        </div>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+        <nav class="hide">
+          <ul class="links">
+            <li class="dropdown">
+              Product <img src="images/icon-arrow-dark.svg" alt="dark arrow icon">
+              <ul class="sub-menu hide">
+                <li><a href="#">overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Integration</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              Company <img src="images/icon-arrow-dark.svg" alt="dark arrow icon">
+              <ul class="sub-menu hide">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                 <li><a href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              Connect <img src="images/icon-arrow-dark.svg" alt="dark arrow icon">
+              <ul class="sub-menu hide">
+                <li><a href="">Contact</a></li>
+                <li><a href="">Newsletter</a></li>
+                <li><a href="">Linkedin</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="btns">
+            <button class="btn login transparent">Login</button>
+            <button class="btn sign light">Sign Up</button>
+          </div>
+        </nav>
+      </div>
 
-  Company
+      <div class="hero">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build online brand</p>
+        <div class="btns">
+          <button class="btn start light">Start for Free</button>
+          <button class="btn learn transparent">Learn More</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="sec-1">
+        <h2>Designed for the future</h2>
+        <div>
+          <div class="text">
+            <div>
+              <h3>Introducing an extensible editor</h3>
+              <p>
+                Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                change the looks of a blog.            
+              </p>
+            </div>
+            <div>
+              <h3>Robust content management</h3>
+              <p>
+                 Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+                 by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+             </p>
+            </div>
+          </div>
+          <div class="image">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/illustration-editor-desktop.svg">
+              <source media="(max-width: 768px)" srcset="images/illustration-editor-mobile.svg">
+              <img src="images/illustration-editor-desktop.svg" alt="">
+            </picture>
+          </div>
+        </div>
+      </section>
 
-  About
-  Team
-  Blog
-  Careers
+      <section class="sec-2">
+            <img src="images/illustration-phones.svg" alt="phones illustrator">
+            <div class="text">
+              <h2>State of the art Infrastructure</h2>
+              <p>
+                With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+                This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.              
+              </p>
+            </div>
+      </section>
 
-  Connect
+      <section class="sec-3">
+          <div class="image">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/illustration-laptop-desktop.svg">
+              <source media="(max-width: 768px)" srcset="images/illustration-laptop-mobile.svg">
+              <img src="images/illustration-laptop-mobile.svg" alt="laptop image">
+            </picture>
+          </div>
 
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
-
-  A modern publishing platform
-  Grow your audience and build your online brand
-
-  Start for Free
-  Learn More
-
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          <div class="text">
+            <div>
+              <h3>Free, open, simple</h3>
+              <p>
+                Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+                features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+                and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.          
+              </p>
+            </div>
+            <div>
+              <h3>poweful tooling</h3>
+              <p>
+                Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+                capable of producing even the most complicated sites. 
+             </p>
+            </div>
+          </div>
+          
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <img src="images/logo.svg" alt="logo" class="logo">
+        <ul class="products">
+          <li>Products</li>
+          <li><a href="#">overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Integration</a></li>
+        </ul>
+        <ul class="company">
+          <li>Company</li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+        <ul class="connect">
+          <li>Connect</li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Linkedin</a></li>
+        </ul>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
   </div>
+  <script>
+    const burger = document.querySelector('.burger')
+    const nav = document.querySelector('nav')
+    const closeBtn = document.querySelector('.close')
+    const dropdowns = document.querySelectorAll('.dropdown')
+    burger.addEventListener('click', () => {
+      nav.classList.remove('hide')
+      closeBtn.classList.remove('hide')
+      burger.classList.add('hide')
+    })
+    closeBtn.addEventListener('click', () => {
+      nav.classList.add('hide')
+      closeBtn.classList.add('hide')
+      burger.classList.remove('hide')
+    })
+    dropdowns.forEach((dropdown, index) => {
+      dropdown.addEventListener('click', (e) => {
+        for(let i = 0; i < dropdowns.length; i++) {
+          if(dropdowns[i] !== dropdown) {
+            dropdowns[i].children[1].classList.add('hide')
+          }
+        }
+        if(e.target.matches('.dropdown')) {
+          dropdown.children[1].classList.toggle('hide')
+        }
+
+      })
+    })
+  </script>
 </body>
 </html>

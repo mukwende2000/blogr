@@ -1,0 +1,339 @@
+:root {
+    --primary-color: #fff;
+    --heading-color: hsl(208, 49%, 24%);
+    --bg-footer: hsl(240, 10%, 16%);
+    --footer-text: hsl(240, 2%, 79%);
+    font-size: 17px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Overpass', sans-serif;
+}
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, p {
+    text-align: center;
+    color: var(--heading-color);
+}
+p { color: initial;}
+h3 {
+    margin-bottom: .5rem;
+}
+p, h3 {
+    line-height: 1.5rem;
+}
+ button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+ }
+ 
+header {
+    background-image: url('images/bg-pattern-intro-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: calc(100% + 60rem);
+    background-position: 36% 40%;
+    background-color: hsl(13, 100%, 72%);
+    border-bottom-left-radius: 30%;
+    padding: 3rem;
+}
+.navigation > div{
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    margin: 0;
+}
+
+.burger {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    text-indent: 100%;
+    overflow: hidden;
+}
+.burger::before {
+    content: '\2630';
+    text-indent: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.close {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    text-indent: 100%;
+    overflow: hidden;
+}
+.close::before {
+    content: '\00D7';
+    text-indent: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+header .hero {
+    margin-top: 7rem;
+}
+header .hero p, header h1 {
+    color: var(--primary-color);
+}
+.hero p {
+    margin-top: 1rem;
+}
+.hero .btns {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+.hero .transparent {
+    margin-left: 1rem;
+}
+.btn {
+    border-radius: 20px;
+    padding: 0.7rem 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+ }
+
+ .light {
+    background-color: var(--primary-color);
+    color: hsl(13, 100%, 72%);
+    transition: all .4s;
+ }
+ .light:hover {
+    background-color: hwb(352 45% 0%);
+    color: var(--primary-color);
+ }
+ .transparent {
+    background-color: transparent;
+    color: var(--primary-color);
+ }
+ .btn.learn {
+    border: 2px solid var(--primary-color);
+    padding: .5rem 1rem;
+    transition: all .4s;
+ }
+ .login {
+    color: #000;
+ }
+ .sign {
+    background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-color: var(--primary-color);
+    color: #000;
+    width: 150px;
+ }
+ .learn:hover {
+    background-color: var(--primary-color);
+    color: hsl(13, 100%, 72%);
+ }
+nav {
+    position: fixed;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    right: 50px;
+    left: 50px;
+    bottom: 3rem;
+    top: 6rem;
+    border-radius: 4px;
+    box-shadow: 10px 10px 50px 1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.links > li {
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.links > li:hover {
+    border-bottom: 1px solid var(--primary-color);
+}
+nav img {
+    display: inline;
+}
+.sub-menu {
+    background-color: hsl(240, 12%, 97%);
+    border-radius: 4px;
+    padding: .7rem 0;
+}
+.sub-menu li {
+    margin: .5rem 0;
+}
+.sub-menu li a {
+    color: grey;
+    transition: all .4s;
+}
+.sub-menu li a:hover {
+    color: #000;
+}
+nav .btn {
+    display: block;
+    margin: auto;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+section {
+    padding: 2rem;
+    margin-top: 3rem;
+    display: flex;
+}
+.sec-1 {
+    flex-direction: column;
+}
+.sec-1 > div {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.sec-1 img {
+    margin: 2rem 0;
+}
+.text > div:last-child {
+    margin-top: 2rem;
+}
+.sec-2 {
+    flex-direction: column;
+    background-image: url('images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: 100px -100%;
+    background-size: calc(100% + 10rem);
+    background-color: hsl(237, 17%, 21%);
+    border-bottom-left-radius: 23%;
+    border-top-right-radius: 23%;
+}
+.sec-2 .text {
+    padding: 3rem 0;
+}
+.sec-2  p, .sec-2 h2 {
+    color: var(--primary-color);
+}
+.sec-3 {
+    flex-direction: column;
+}
+footer {
+    background-color: var(--bg-footer);
+    border-top-right-radius: 20%;
+    text-align: center;
+    padding: 2rem;
+}
+footer .logo {
+    margin: 3rem auto;
+}
+footer li {
+    margin-block: .2rem;
+}
+footer li:first-child {
+    color: var(--primary-color);
+    margin: 1rem 0 .5rem 0;
+}
+footer li a {
+    color: var(--footer-text);
+}
+@media (min-width: 768px) {
+    h2, h1, h3, p {
+        text-align: left;
+    }
+    .sec-1 h2 {
+        text-align: center;
+    }
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .burger {
+        display: none;
+    }
+    nav.hide {
+        display: flex;
+    }
+    nav {
+        position: initial;
+        background-color: transparent;
+        box-shadow: none;
+        width: 100%;
+        justify-content: space-between;
+    }
+    header {
+        padding: 2rem 3rem;
+    }
+    header .hero {
+        margin-top: 0;
+    }
+    header .hero h1, header .hero p {
+        text-align: center;
+    }
+    .sub-menu {
+        position: absolute;
+        padding: 1rem;
+    }
+    .login {
+        color: var(--primary-color);
+    }
+    .links, nav .btns {
+        display: flex;
+    }
+    .links li {
+        color: var(--primary-color);
+    }
+    .sign {
+        color: hsl(13, 100%, 72%);
+        background-color: #fff;
+        background-image: none;
+    }
+    .sec-1 > div, .sec-2, .sec-3 {
+        flex-direction: row;
+        align-items: center;
+    }
+    .sec-1 .text, .sec-3 .text {
+        width: 60%;
+    }
+    .sec-1 img, .sec-3 img {
+        width: 100%;
+    }
+    .sec-2 {
+        border-radius: 0;
+        gap: 5rem;
+        padding: 4rem;
+    }
+    .sec-2 img {
+        margin-top: -100px;
+    }
+    .text {
+        padding: 5rem;
+    }
+    footer {
+        border-radius: 0;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .footer .logo {
+        margin: 0;
+    }
+}
